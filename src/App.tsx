@@ -4,9 +4,9 @@ function App() {
 
 
   return (
-    <div>
+    <h1>
       THE MOVIE DATABASE
-    </div>
+    </h1>
   )
 }
 
