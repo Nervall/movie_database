@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { apiRequest } from '../utils/api';
 import './movies.css';
@@ -42,14 +42,14 @@ const Movies = () => {
             <ul>
                 {movies.map((movie: any) => (
                     <li key={movie.imdbID}>
-                        <button className='movies-button'>
-                        <img src={movie.Poster} alt={movie.Title} />
-                        <div className='movies-information'>
-                            <h3>{movie.Title} ({movie.Year})</h3>
-                            <p>{`Year: ${movie.Year}`}</p>
-                            <p>{`Type: ${movie.Type}`}</p>
-                        </div>
-                        </button>
+                        <Link to={"/movie/" + movie.imdbID} className='movies-button'>
+                            <img src={movie.Poster} alt={movie.Title} />
+                            <div className='movies-information'>
+                                <h3>{movie.Title} ({movie.Year})</h3>
+                                <p>{`Year: ${movie.Year}`}</p>
+                                <p>{`Type: ${movie.Type}`}</p>
+                            </div>
+                        </Link>
                     </li>
                 ))}
             </ul>
