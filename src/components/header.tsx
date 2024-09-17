@@ -1,9 +1,11 @@
+import { useNavigate } from 'react-router-dom';
 import SearchInput from './searchInput';
 
 const Header = () => {
+    const navigate = useNavigate();
 
     const handleSearch = (search: string) => {
-        console.log(search)
+        navigate("movies/" + search)
     }
 
     return (

@@ -1,5 +1,6 @@
-import { BrowserRouter as Router, Routes } from 'react-router-dom';
-import Header from './components/header'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/header';
+import Movies from './components/movies';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
+        <Route path={"movies/:search"} element={<Movies />} />
       </Routes>
     </Router>
 
