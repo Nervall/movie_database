@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import type { MovieDetailsType } from '../utils/types';
 import { apiRequest } from '../utils/api';
+import NoImg from '../assets/no-img.png';
 import './movieDetails.css';
 
 const MovieDetails = () => {
@@ -39,7 +40,7 @@ const MovieDetails = () => {
         {error && <p>{error}</p>}
 		{movieDetails &&
 			<div className='movieDetails-information-wrapper'>
-				<img src={movieDetails.Poster} alt={movieDetails.Title} className="movie-poster" />
+				<img src={movieDetails.Poster !== "N/A" ? movieDetails.Poster : NoImg} alt={movieDetails.Title} className="movie-poster" />
 				<div className='movieDetails-information'>
 					<h2>{movieDetails.Title} ({movieDetails.Year})</h2>
 					<p><strong>Plot:</strong> {movieDetails.Plot}</p>

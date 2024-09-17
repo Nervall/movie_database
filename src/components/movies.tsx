@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { apiRequest } from '../utils/api';
+import NoImg from '../assets/no-img.png'
 import './movies.css';
 
 const Movies = () => {
@@ -43,7 +44,7 @@ const Movies = () => {
                 {movies.map((movie: any) => (
                     <li key={movie.imdbID}>
                         <Link to={"/movie/" + movie.imdbID} className='movies-button'>
-                            <img src={movie.Poster} alt={movie.Title} />
+                            <img src={movie.Poster !== "N/A" ? movie.Poster : NoImg} alt={movie.Title} />
                             <div className='movies-information'>
                                 <h3>{movie.Title} ({movie.Year})</h3>
                                 <p>{`Year: ${movie.Year}`}</p>
