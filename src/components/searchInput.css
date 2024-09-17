@@ -1,0 +1,11 @@
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    padding: 0.5rem;
+    min-width: 16rem;
+    margin: 1rem 0.5rem;
+}
