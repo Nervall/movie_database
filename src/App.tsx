@@ -1,12 +1,11 @@
 import './App.css'
+import Header from './components/header'
 
 function App() {
 
 
   return (
-    <h1>
-      THE MOVIE DATABASE
-    </h1>
+    <Header />
   )
 }
 
