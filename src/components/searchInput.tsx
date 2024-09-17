@@ -23,7 +23,7 @@ const SearchInput = ({ name = "search", placeholder = "Search...", handleSearch 
           onChange={(e) => setSearchValue(e.target.value)}
           placeholder={placeholder}
         />
-        <button type="submit">Search</button>
+        <button type="submit" className='search-button'>Search</button>
       </form>
     );
   };
