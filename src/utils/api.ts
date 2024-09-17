@@ -8,7 +8,7 @@ const typeOfSearch = (query:string, type: TypeOfSearch) => {
         case 'TITLE':
            return `&t=${query}`;
         case "ID":
-            return `&i=${query}`
+            return `&i=${query}&plot=full`
         default:
            return `&s=${query}`
     }
