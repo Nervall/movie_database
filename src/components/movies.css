@@ -18,6 +18,8 @@
     width: 100%;
     cursor: pointer;
     border-radius: 0.25rem;
+    text-decoration: none;
+    color: #000;
 }
 
 .movies-button:hover {
