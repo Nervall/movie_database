@@ -16,14 +16,14 @@ describe('SearchInput Component', () => {
     render(<SearchInput handleSearch={vi.fn()} />);
 
     const input = screen.getByPlaceholderText(/search/i);
-    
+
     fireEvent.change(input, { target: { value: 'inception' } });
     expect(input).toHaveValue('inception');
   });
 
   it('calls handleSearch value when form is submitted', () => {
     const mockHandleSearch = vi.fn();
-    
+
     render(<SearchInput handleSearch={mockHandleSearch} />);
 
     const input = screen.getByPlaceholderText('Search...');

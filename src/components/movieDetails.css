@@ -1,45 +1,45 @@
 .movieDetails-wrapper {
-    margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 .movieDetails-information-wrapper {
-    display: flex;
-    padding: 1rem;
-    margin: 0 1rem;
-    border: 1px solid #ccc;
+  display: flex;
+  padding: 1rem;
+  margin: 0 1rem;
+  border: 1px solid #ccc;
 }
 
 .movieDetails-information-wrapper > img {
-    margin-right: 1rem;
-    max-width: 250px;
-    align-self: flex-start;
+  margin-right: 1rem;
+  max-width: 250px;
+  align-self: flex-start;
 }
 
 .movieDetails-information {
-    text-align: left;
-    padding: 0 1rem;
+  text-align: left;
+  padding: 0 1rem;
 }
 
 .movieDetails-information > h2 {
-     margin: 0;
-     margin-bottom: 0.75rem;
- }
+  margin: 0;
+  margin-bottom: 0.75rem;
+}
 
 .movieDetails-information > p {
-    margin: 0;
-    margin-bottom: 0.75rem;
+  margin: 0;
+  margin-bottom: 0.75rem;
 }
 
 @media screen and (max-width: 650px) {
-    .movieDetails-information-wrapper {
-        flex-direction: column;
-    }
+  .movieDetails-information-wrapper {
+    flex-direction: column;
+  }
 
-    .movieDetails-information-wrapper > img {
-       margin: 0 auto;
-    }
+  .movieDetails-information-wrapper > img {
+    margin: 0 auto;
+  }
 
-    .movieDetails-information {
-        margin-top: 1.5rem;
-    }
+  .movieDetails-information {
+    margin-top: 1.5rem;
+  }
 }
