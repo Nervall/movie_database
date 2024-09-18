@@ -33,7 +33,7 @@ const Movies = () => {
         setError('');
         handleSearch(search)
     }
-  }, []);
+  }, [search]);
 
   return (
     <div className='movies-wrapper'>

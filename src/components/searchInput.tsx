@@ -11,8 +11,13 @@ type SearchInputProps = {
 const SearchInput = ({ name = "search", placeholder = "Search...", handleSearch }: SearchInputProps) => {
   const [searchValue, setSearchValue] = useState('');
 
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    handleSearch(searchValue)
+  }
+
     return (
-      <form className="search-wrapper" onSubmit={() => handleSearch(searchValue)} role='form'>
+      <form className="search-wrapper" onSubmit={(e) => onSubmit(e)} role='form'>
         {SearchIcon && <img src={SearchIcon} alt="Search icon" />}
         <input
           className="search-input"
