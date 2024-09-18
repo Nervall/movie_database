@@ -1,0 +1,18 @@
+.home-header {
+    color: #ecb210;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+}
+
+.home-img {
+    box-sizing: border-box;
+    margin: 0.5rem;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.home-img:hover {
+    transform: scale(1.02);
+}
