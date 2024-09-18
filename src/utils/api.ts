@@ -1,5 +1,5 @@
-const API_URL = ' https://www.omdbapi.com/';
-const API_KEY =  "9f591bcb"
+const API_URL = 'https://www.omdbapi.com/';
+const API_KEY =  import.meta.env.VITE_API_KEY;
 
 type TypeOfSearch = "TITLE" | "ID" | "SEARCH";
 
