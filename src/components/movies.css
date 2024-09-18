@@ -27,8 +27,9 @@
 }
 
 .movies-button > img {
-  max-width: 5rem;
+  max-width: 7rem;
   padding-right: 1.5rem;
+  align-self: center;
 }
 
 .movies-information {
