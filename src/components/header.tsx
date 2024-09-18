@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import SearchInput from './searchInput';
+import { Logo } from '../assets/index';
 
 const Header = () => {
     const navigate = useNavigate();
@@ -9,13 +10,18 @@ const Header = () => {
     }
 
     return (
-        <header style={{ padding: '2rem' }}>
-            <h1>THE MOVIE DATABASE</h1>
-                <SearchInput 
-                name="search"
-                placeholder="Search movie..."
-                handleSearch={handleSearch}
-                />
+        <header style={{ padding: '3rem' }}>
+            <button 
+                style={{ background: 'none', cursor: 'pointer', border: 'none' }}
+                onClick={() => window.location.href = '/'}
+            >
+                <img src={Logo} alt="Movie database logo" />
+            </button>
+            <SearchInput 
+            name="search"
+            placeholder="Search movie..."
+            handleSearch={handleSearch}
+            />
         </header>
     )
 };
