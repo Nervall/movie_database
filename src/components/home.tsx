@@ -35,7 +35,7 @@ const Home = () => {
                 {movieArr.map(({img, imdbID}) => {
                     return (
                         <Link to={"/movie/" + imdbID} key={imdbID} className='home-link'>
-                            <img className='home-img' src={img} alt="images from Netflix in educational purpose" />
+                            <img className='home-img' src={img} alt="images from Netflix in educational purpose" width="299px" height="168px" />
                         </Link>
                     )
                 })}

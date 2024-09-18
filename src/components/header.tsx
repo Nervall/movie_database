@@ -15,7 +15,7 @@ const Header = () => {
                 style={{ background: 'none', cursor: 'pointer', border: 'none' }}
                 onClick={() => window.location.href = '/'}
             >
-                <img src={Logo} alt="Movie database logo" />
+                <img src={Logo} alt="Movie database logo" width="350px" height="175px" />
             </button>
             <SearchInput 
             name="search"

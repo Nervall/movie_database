@@ -4,10 +4,6 @@
     justify-content: center;
 }
 
-.search-wrapper > img {
-    width: 2rem;
-}
-
 .search-input {
     box-sizing: border-box;  
     padding: 0.75rem;

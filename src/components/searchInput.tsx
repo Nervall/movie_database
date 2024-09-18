@@ -18,7 +18,7 @@ const SearchInput = ({ name = "search", placeholder = "Search...", handleSearch 
 
     return (
       <form className="search-wrapper" onSubmit={(e) => onSubmit(e)} role='form'>
-        {SearchIcon && <img src={SearchIcon} alt="Search icon" />}
+        {SearchIcon && <img src={SearchIcon} alt="Search icon" width="32px" height="32px"/>}
         <input
           className="search-input"
           id={name}
