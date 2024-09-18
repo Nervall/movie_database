@@ -1,0 +1,9 @@
+.header-wrapper {
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.header-wrapper > button {
+  background: none;
+  cursor: pointer;
+  border: none;
+}
