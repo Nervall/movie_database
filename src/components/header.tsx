@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import SearchInput from './searchInput';
 import { Logo } from '../assets/index';
+import './header.css';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -10,11 +11,8 @@ const Header = () => {
   };
 
   return (
-    <header style={{ padding: '3rem' }}>
-      <button
-        style={{ background: 'none', cursor: 'pointer', border: 'none' }}
-        onClick={() => (window.location.href = '/')}
-      >
+    <header className="header-wrapper">
+      <button onClick={() => (window.location.href = '/')}>
         <img
           src={Logo}
           alt="Movie database logo"
