@@ -1,15 +1,29 @@
 .home-header {
-    color: #ecb210;
-    font-size: 24px;
+    color: #d39b01;
+    font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
-    margin-left: 1rem;
+}
+
+.home-img-wrapper {
+    display: flex;
+}
+
+.home-link {        
+    display: block;
+    margin: 0.5rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid transparent;
+}
+
+.home-link:focus {
+    outline: 2px solid #0056b3;
 }
 
 .home-img {
-    box-sizing: border-box;
-    margin: 0.5rem;
-    border-radius: 10px;
+    border-radius: 0.75rem;
     transition: transform 0.2s ease-in-out;
 }
 
