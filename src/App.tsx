@@ -8,17 +8,16 @@ import './App.css';
 function App() {
   return (
     <>
-    <Router basename='/'>
-      <Header />
-      <Routes>
-        <Route path={"/"} element={<Home />} />
-        <Route path={"movies/:search"} element={<Movies />} />
-        <Route path={"movie/:id"} element={<MovieDetails />} />
-      </Routes>
-    </Router>
-
-  </>
-  )
+      <Router basename="/">
+        <Header />
+        <Routes>
+          <Route path={'/'} element={<Home />} />
+          <Route path={'movies/:search'} element={<Movies />} />
+          <Route path={'movie/:id'} element={<MovieDetails />} />
+        </Routes>
+      </Router>
+    </>
+  );
 }
 
-export default App
+export default App;

@@ -1,34 +1,34 @@
 .home-header {
-    color: #d39b01;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
+  color: #d39b01;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 .home-img-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-.home-link {        
-    display: block;
-    margin: 0.5rem;
-    border-radius: 0.75rem;
-    display: flex;
-    align-items: center;
-    border: 2px solid transparent;
+.home-link {
+  display: block;
+  margin: 0.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
 }
 
 .home-link:focus {
-    outline: 2px solid #0056b3;
+  outline: 2px solid #0056b3;
 }
 
 .home-img {
-    border-radius: 0.75rem;
-    transition: transform 0.2s ease-in-out;
+  border-radius: 0.75rem;
+  transition: transform 0.2s ease-in-out;
 }
 
 .home-img:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
